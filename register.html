@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">    
+    <link rel="stylesheet" href="./jquery.Thailand.js/dist/jquery.Thailand.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  </head>
+  <body>
+
+    <!-- logo -->
+    <div class="bg-white">
+      <div class="col d-flex justify-content-center py-2">
+        <div class="col-lg-2 col-md-3 ">
+          <img src="assets/images/Logo_PTT.png" class="img-responsive float-right" style="max-width: 100px; ">
+        </div>
+        <div class="col-1 text-center">
+          <img src="assets/images/x-01.png" class="img-responsive mx-auto mt-2" style="width: 12px;">
+        </div>
+        <div class="col-lg-2 col-md-3 ">
+          <img src="assets/images/Logo_Dhipaya.png" class="img-responsive mt-1" style="max-width: 134px;">
+        </div>
+      </div>
+    </div>
+    <!-- logo -->
+
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+          <h3 class="text-center color-primaty mt-5 mb-3">ลงทะเบียน</h1>
+          
+          <!-- Circles which indicates the steps of the form: -->
+          <div class="d-flex justify-content-between mb-3 pt-2" id="control-steps"> 
+            <div class="step col-3 text-center p-0 step-active" id="step-1">                   
+              <div class="mx-auto col-8" style="min-width: 65px;">    
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 54.4 54.4" style="enable-background:new 0 0 54.4 54.4;" xml:space="preserve">
+                <g class="svg-icon svg-active" id="svg-1">
+                  <path d="M27.2,0C12.2,0,0,12.2,0,27.2s12.2,27.2,27.2,27.2s27.2-12.2,27.2-27.2S42.2,0,27.2,0z M43.9,46.2
+                    c-1.7-7.8-8.6-13.4-16.6-13.4c-8,0-14.9,5.6-16.6,13.4C5.3,41.5,2,34.8,2,27.2C2,13.3,13.3,2,27.2,2c13.9,0,25.2,11.3,25.2,25.2
+                    C52.4,34.8,49.1,41.5,43.9,46.2z"/>
+                  <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.8887 25.4032)" class="st0" cx="27.2" cy="21" rx="7.9" ry="7.9"/>
+                </g>
+                </svg>
+              </div>
+              <p class="my-2">ข้อมูลส่วนบุคคล</p>
+            </div>
+            <div class="border-bottom col-1" style="margin-bottom: 60px;"></div>
+            <div class="step col-3 text-center p-0" id="step-2">
+              <div class="mx-auto col-8" style="min-width: 65px;">                
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 54.4 54.4" style="enable-background:new 0 0 54.4 54.4;" xml:space="preserve" >
+                <path id="svg-2" class="svg-icon" d="M27.2,0C12.2,0,0,12.2,0,27.2s12.2,27.2,27.2,27.2s27.2-12.2,27.2-27.2S42.2,0,27.2,0z M23.6,52.2v-9.1h7.1v9.1
+                  c-1.1,0.2-2.3,0.2-3.5,0.2C26,52.4,24.8,52.3,23.6,52.2z M43.4,46.6V33.8H51L27.2,11.6L3.3,33.8H11v12.7c-5.5-4.6-9-11.5-9-19.3
+                  C2,13.3,13.3,2,27.2,2s25.2,11.3,25.2,25.2C52.4,35,48.9,41.9,43.4,46.6z"/>
+                </svg>
+              </div>
+              <p class="my-2">ข้อมูลที่อยู่อาศัย</p>
+            </div>
+            <div class="border-bottom col-1" style="margin-bottom: 60px;"></div>
+            <div class="step col-3 text-center p-0" id="step-3">
+              <div class="mx-auto col-8" style="min-width: 65px;">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 54.4 54.4" style="enable-background:new 0 0 54.4 54.4;" xml:space="preserve">
+                <g class="svg-icon" id="svg-3">
+                  <path  d="M27.2,0C12.2,0,0,12.2,0,27.2s12.2,27.2,27.2,27.2s27.2-12.2,27.2-27.2S42.2,0,27.2,0z M27.2,52.4
+                    C13.3,52.4,2,41.1,2,27.2S13.3,2,27.2,2s25.2,11.3,25.2,25.2S41.1,52.4,27.2,52.4z"/>
+                  <path  d="M13.1,29.2c-2.1,0-3.9,1.7-3.9,3.9c0,2.1,1.7,3.9,3.9,3.9c2.1,0,3.9-1.7,3.9-3.9C17,30.9,15.2,29.2,13.1,29.2z
+                    "/>
+                  <path  d="M40.2,29.2c-2.1,0-3.9,1.7-3.9,3.9c0,2.1,1.7,3.9,3.9,3.9c2.1,0,3.9-1.7,3.9-3.9C44,30.9,42.3,29.2,40.2,29.2z
+                    "/>
+                  <path  d="M40.2,24l-8.8-7c-0.6-0.5-1.3-0.7-2.1-0.8H12.9c-1,0-2,0.5-2.6,1.3c-1.9,2.3-5.5,7.5-6.4,11.3
+                    c-1,5.1,1.4,4.9,1.4,4.9H8V33C8,30.2,10.2,28,13,28c2.8,0,5.1,2.3,5.1,5.1v0.7H35V33c0-2.8,2.3-5.1,5.1-5.1s5.1,2.3,5.1,5.1v0.7
+                    h2.3c1.9,0,3.4-1.5,3.4-3.4c0,0,0,0,0,0v-1.1C50.7,22.9,40.2,24,40.2,24z M19.8,18.5v5.2h-9.3c-0.2,0-0.3-0.1-0.3-0.3
+                    c0-0.1,0-0.1,0-0.2l2.2-3.5c0.5-0.8,1.3-1.2,2.3-1.2H19.8L19.8,18.5L19.8,18.5L19.8,18.5z M34.8,23.6
+                    C34.8,23.6,34.8,23.6,34.8,23.6l-13.2,0v-5.3h7c0.7,0,1.3,0.3,1.8,0.8l4.5,4.2C34.9,23.4,34.9,23.6,34.8,23.6z"/>
+                </g>
+                </svg>
+              </div>
+              <p class="my-2">ข้อมูลรถยนต์</p>
+            </div>        
+          </div>
+        
+          <form id="regForm" action="otp.html">
+            <fieldset class="tab">
+              <!-- form section -->
+              <div class="shadow p-4 mb-3 bg-white rounded">    
+                <div class="form-group">
+                  <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+                  <select name="gender" class="custom-select form-rounded mt-3">
+                    <option value="mister">นาย</option>
+                    <option value="miss">นางสาว</option>
+                    <option value="mistress">นาง</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input name="names" class="form-control form-rounded" type="text" placeholder="ชื่อ">
+                </div>
+                <div class="form-group p-0">
+                  <input name="lastNames" class="form-control form-rounded" type="text" placeholder="นามสกุล">
+                </div>
+              </div>
+              <!-- form section -->
+              <div class="shadow p-4 mb-3 bg-white rounded ">
+                <div class="form-group pt-3">
+                  <input name="phone" class="form-control form-rounded" type="text" placeholder="เบอร์โทรศัพท์">
+                </div>
+                <div class="form-group">
+                  <input name="email" class="form-control form-rounded" type="text" placeholder="อีเมล">
+                </div>
+                <div class="form-group">
+                  <input name="identification" class="form-control form-rounded" type="text" placeholder="เลขประจำตัวประชาชน">
+                </div>
+                <div class="form-group p-0">
+                  <input name="birthday" class="form-control form-rounded" type="date" placeholder="วันเดือนปีเกิด">
+                </div>
+              </div>
+              <!-- form section -->
+            </fieldset>
+            <fieldset class="tab">
+              <!-- form section -->
+              <div class="shadow p-4 mb-3 bg-white rounded ">    
+                <div class="form-group">
+                  <input name="house" class="form-control form-rounded" type="text" placeholder="บ้านเลขที่">
+                </div>
+                <div class="form-group">
+                  <input name="road" class="form-control form-rounded" type="text" placeholder="ถนน">
+                </div>
+                <div class="form-group">
+                  <input name="district" class="form-control form-rounded" type="text" placeholder="ตำบล/แขวง">
+                </div>
+                <div class="form-group">
+                  <input name="amphoe" class="form-control form-rounded" type="text" placeholder="อำเภอ/เขต">
+                </div>
+                <div class="form-group">
+                  <input name="province" class="form-control form-rounded" type="text" placeholder="จังหวัด">
+                </div>
+                <div class="form-group mb-0">
+                  <input name="zipcode" class="form-control form-rounded" type="text" placeholder="รหัสไปรษณีย์">
+                </div>
+              </div>
+              <!-- form section -->
+            </fieldset>
+            <fieldset class="tab">
+              <!-- form section -->
+              <div class="shadow mb-4 bg-white rounded" >    
+                <div id="accordion">
+                  <div class="card template">
+                    <a class="card-link card-header bgColor-primaty text-white d-flex justify-content-between" data-toggle="collapse" href="#1">
+                      <div id="header-text">ข้อมูลรถยนต์คันที่ 1</div>
+                      <div>
+                        <svg version="1.1" id="collapse-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16">
+                          <style type="text/css">
+                            .st5{fill:#fff;}
+                          </style>
+                          <polygon class="st5" points="141.8,0 115.1,26.6 343.7,256 115.1,485.4 141.8,512 396.9,256 "/>
+                        </svg>
+                      </div>                     
+                    </a>
+                    <div id="1" class="panel-collapse collapse show" data-parent="#accordion">
+                      <div class="card-body">
+                        <form>
+                          <div class="shadow-sm p-3 mb-3 bg-white rounded ">    
+                            <div class="form-group">
+                              <select name="carType" class="custom-select form-rounded" id="exampleFormControlSelect1">
+                                <option>ประเภทรถยนต์</option>
+                                <option>ประเภทรถยนต์</option>
+                                <option>ประเภทรถยนต์</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <select name="brand" class="custom-select form-rounded" id="exampleFormControlSelect1">
+                                <option>ยี่ห้อรถยนต์</option>
+                                <option>ยี่ห้อรถยนต์</option>
+                                <option>ยี่ห้อรถยนต์</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <select name="model" class="custom-select form-rounded" id="exampleFormControlSelect1">
+                                <option>รุ่นรถยนต์</option>
+                                <option>รุ่นรถยนต์</option>
+                                <option>รุ่นรถยนต์</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <select name="year" class="custom-select form-rounded" id="exampleFormControlSelect1">
+                                <option>ปีรถยนต์</option>
+                                <option>ปีรถยนต์</option>
+                                <option>ปีรถยนต์</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="shadow-sm p-3 bg-white rounded ">
+                            <div class="form-group">
+                              <select name="size" class="custom-select form-rounded" id="exampleFormControlSelect1">
+                                <option>ขนาดเครื่องยนต์ (cc)</option>
+                                <option>ขนาดเครื่องยนต์</option>
+                                <option>ขนาดเครื่องยนต์</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <input name="carNumber" class="form-control form-rounded" type="text" placeholder="เลขทะเบียนรถยนต์">
+                            </div>
+                            <div class="form-group">
+                              <input name="county" class="form-control form-rounded" type="text" placeholder="จังหวัด">
+                            </div>
+                            <div class="form-group">
+                              <input name="bodyNumber" class="form-control form-rounded" type="text" placeholder="เลขตัวถัง">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- accordion -->
+              </div>
+            <!-- form section -->
+            </fieldset>
+            <button type="button" id="addCar" class="btn col bgColor-Third text-white form-rounded mt-4" >+เพิ่มรถยนต์</button>
+            <button type="button" id="nextBtn" class="btn col bgColor-secondary text-white form-rounded p-2 mt-4 mb-5" onclick="nextPrev(1)">ถัดไป</button>
+          </form>                       
+        </div><!-- col-lg-6 -->        
+      </div><!-- row -->
+    </div><!-- container -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/js/uikit.min.js"></script>    
+    <!-- dependencies for zip mode -->
+    <script type="text/javascript" src="./jquery.Thailand.js/dependencies/zip.js/zip.js"></script>
+    <!-- / dependencies for zip mode -->
+    <script type="text/javascript" src="./jquery.Thailand.js/dependencies/JQL.min.js"></script>
+    <script type="text/javascript" src="./jquery.Thailand.js/dependencies/typeahead.bundle.js"></script>   
+    <script type="text/javascript" src="./jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+    // jquery.Thailand.js  
+    $.Thailand({
+      database: './jquery.Thailand.js/database/db.json', 
+
+        $district: $('#regForm [name="district"]'),
+        $amphoe: $('#regForm [name="amphoe"]'),
+        $province: $('#regForm [name="province"]'),
+        $zipcode: $('#regForm [name="zipcode"]'),
+
+        onDataFill: function(data){
+          console.info('Data Filled', data);
+        },
+        onLoad: function(){
+          console.info('Autocomplete is ready!');
+          $('#loader, .info-address').toggle();
+        }
+    });
+    // watch on change
+    $('#regForm [name="district"]').change(function(){
+        console.log('ตำบล', this.value);
+    });
+    $('#regForm [name="amphoe"]').change(function(){
+        console.log('อำเภอ', this.value);
+    });
+    $('#regForm [name="province"]').change(function(){
+        console.log('จังหวัด', this.value);
+    });
+    $('#regForm [name="zipcode"]').change(function(){
+        console.log('รหัสไปรษณีย์', this.value);
+    });
+    // jquery.Thailand.js
+
+    var $template = $(".template");
+    var hash = 1;
+
+    $("#addCar").on("click", function () {
+      $(".show").removeClass("show");
+      $(".card-link").addClass("collapsed");
+      var $newPanel = $template.clone();
+
+      $newPanel.find(".card-link").attr("href",  "#" + (++hash));
+      $newPanel.find(".card-link").removeClass("collapsed");
+      $newPanel.find("#header-text").text("ข้อมูลรถยนต์คันที่ " + hash);
+      $newPanel.find(".panel-collapse").attr("id", hash).addClass("collapse").addClass("show");
+      $("#accordion").append($newPanel.fadeIn());
+    });
+
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the crurrent tab
+
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("addCar").style.display = "none";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("addCar").style.display = "inline";
+        document.getElementById("nextBtn").innerHTML = "ลงทะเบียน";
+      } 
+
+      if(n==0){
+        $( "#svg-1" ).addClass( "svg-active" );
+        $( "#step-1" ).addClass( "step-active " );
+      }else if(n==1){
+        $( "#svg-2" ).addClass( "svg-active" );
+        $( "#step-2" ).addClass( "step-active " );
+      }else if(n==2){
+        $( "#svg-3" ).addClass( "svg-active" );
+        $( "#step-3" ).addClass( "step-active " );
+      }
+    }
+
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      // if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("regForm").submit();
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+
+    function validateForm() {
+      // This function deals with validation of the form fields
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+      // A loop that checks every input field in the current tab:
+      for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].value == "") {
+          // add an "invalid" class to the field:
+          y[i].className += " invalid";
+          // and set the current valid status to false
+          valid = false;
+        }
+      }
+      // If the valid status is true, mark the step as finished and valid:
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " step-active";
+      }
+      return valid; // return the valid status
+    }
+    </script>
+  </body>
+</html>

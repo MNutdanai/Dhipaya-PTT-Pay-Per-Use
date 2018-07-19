@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <!-- logo -->
+    <div class="bg-white">
+      <div class="col d-flex justify-content-center py-2">
+        <div class="col-lg-2 col-md-3 ">
+          <img src="assets/images/Logo_PTT.png" class="img-responsive float-right" style="max-width: 100px; ">
+        </div>
+        <div class="col-1 text-center">
+          <img src="assets/images/x-01.png" class="img-responsive mx-auto mt-2" style="width: 12px;">
+        </div>
+        <div class="col-lg-2 col-md-3 ">
+          <img src="assets/images/Logo_Dhipaya.png" class="img-responsive mt-1" style="width: 134px;">
+        </div>
+      </div>
+    </div>
+    <!-- logo -->
+
+    <!-- form -->
+    <div class="container ">
+      <div class="row">        
+        <div class="col-lg-6 col-md-9 sm-12 mx-auto">
+          <h3 class="text-center color-primaty my-5">เปลี่ยนแปลงรหัสผ่าน</h1>
+          <form action="passwordSuccess.html" data-toggle="validator">
+            <div class="shadow p-4 mb-5 bg-white rounded ">    
+              <div class="form-group">
+                <input name="current_password" class="form-control form-rounded" type="text" placeholder="รหัสผ่านเดิม">
+              </div>
+              <div class="form-group">
+                <input name="current_password" id="password" class="form-control form-rounded" type="password" placeholder="รหัสผ่านใหม่">
+              </div>
+              <div class="form-group">
+                <input name="current_password" id="confirm_password" class="form-control form-rounded" type="password" placeholder="ยืนยันรหัสผ่านใหม่">
+              </div>             
+            </div>
+
+            <button class="btn btn-block bgColor-primaty text-white form-rounded p-2 mb-5" type="submit">ยืนยัน</button>
+          </form>
+        </div><!-- col-lg-6 -->
+      </div><!-- row -->
+    </div><!-- container -->
+    <!-- form -->
+
+    <script type="text/javascript">
+    var password = document.getElementById("password");
+    var confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword(){
+      if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("รหัสผ่านไม่ตรงกัน");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/css/uikit.css">
+    <link rel="stylesheet" href="./jquery.Thailand.js/dist/jquery.Thailand.min.css">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"> 
+  </head>
+  <body>
+
+    <!-- logo -->
+    <div class="bg-white">
+      <div class="col d-flex justify-content-center py-2">
+        <div class="col-lg-2 col-md-3 ">
+          <img src="assets/images/Logo_PTT.png" class="img-responsive float-right" style="max-width: 100px; ">
+        </div>
+        <div class="col-1 text-center">
+          <img src="assets/images/x-01.png" class="img-responsive mx-auto mt-2" style="width: 12px;">
+        </div>
+        <div class="col-lg-2 col-md-3 ">
+          <img src="assets/images/Logo_Dhipaya.png" class="img-responsive mt-1" style="width: 134px;">
+        </div>
+      </div>
+    </div>
+    <!-- logo -->
+
+    <!-- menu -->
+    <nav class="navbar navbar-lg navbar-light shadow-sm mb-4">
+        <div class="navbar-nav d-flex flex-row text-center">
+          <li><a class="nav-item nav-link py-2 px-3" href="index.html">ซื้อกรมธรรม์ <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              สถานะกรมธรรม์
+            </a>
+            <div class="dropdown-menu p-0 m-0 shadow-sm" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu-top"></div>
+              <a class="dropdown-item p-2" href="checkPolicy.html">สถานะกรมธรรม์</a>
+              <a class="dropdown-item p-2" href="history.html">ประวัติการทำประกันภัยย้อนหลัง</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle py-2 px-3 activeMenu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              แก้ไขข้อมูล
+            </a>
+            <div class="dropdown-menu p-0 m-0 shadow-sm" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu-top"></div>
+              <a class="dropdown-item pt-3 px-2" href="info_user.html">ข้อมูลส่วนตัว</a>
+              <a class="dropdown-item pt-3 px-2 activeSubMenu" href="info_address.html">ข้อมูลที่อยู่อาศัย</a>
+              <a class="dropdown-item pt-3 px-2" href="info_car.html">ข้อมูลรถยนต์</a>
+            </div>
+          </li>
+          <a class="nav-item nav-link py-2 px-3 disabled" href="login.html">ออกจากระบบ</a>
+        </div>
+    </nav>
+    <!-- menu -->
+
+    <!-- form -->
+    <div class="container ">
+      <div class="row">        
+        <div class="col-lg-6 col-md-9 sm-12 mx-auto">
+          <h3 class="text-center color-primaty my-5">ข้อมูลที่อยู่อาศัย</h1>
+          <form id="address" class="info-address.html">
+            <div class="shadow p-4 bg-white rounded ">    
+              <div class="form-group">
+                <input name="house" class="form-control form-rounded" type="text" placeholder="บ้านเลขที่">
+              </div>
+              <div class="form-group">
+                <input name="road" class="form-control form-rounded" type="text" placeholder="ถนน">
+              </div>
+              <div class="form-group">
+                <input name="district" class="form-control form-rounded" type="text" placeholder="ตำบล/แขวง">
+              </div>
+              <div class="form-group">
+                <input name="amphoe" class="form-control form-rounded" type="text" placeholder="อำเภอ/เขต">
+              </div>
+              <div class="form-group">
+                <input name="province" class="form-control form-rounded" type="text" placeholder="จังหวัด">
+              </div>
+              <div class="form-group mb-0">
+                <input name="zipcode" class="form-control form-rounded" type="text" placeholder="รหัสไปรษณีย์">
+              </div>
+            </div> 
+            <button class="btn btn-block bgColor-secondary text-white form-rounded p-2 my-5" type="submit">ยืนยัน</button>
+          </form>
+        </div><!-- col-lg-6 -->        
+      </div><!-- row -->
+    </div><!-- container -->
+    <!-- form -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/js/uikit.min.js"></script>    
+    <!-- dependencies for zip mode -->
+    <script type="text/javascript" src="./jquery.Thailand.js/dependencies/zip.js/zip.js"></script>
+    <!-- / dependencies for zip mode -->
+    <script type="text/javascript" src="./jquery.Thailand.js/dependencies/JQL.min.js"></script>
+    <script type="text/javascript" src="./jquery.Thailand.js/dependencies/typeahead.bundle.js"></script>   
+    <script type="text/javascript" src="./jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $.Thailand({
+        database: './jquery.Thailand.js/database/db.json', 
+
+          $district: $('#address [name="district"]'),
+          $amphoe: $('#address [name="amphoe"]'),
+          $province: $('#address [name="province"]'),
+          $zipcode: $('#address [name="zipcode"]'),
+
+          onDataFill: function(data){
+            console.info('Data Filled', data);
+          },
+
+          onLoad: function(){
+            console.info('Autocomplete is ready!');
+            $('#loader, .info-address').toggle();
+          }
+      });
+      // watch on change
+      $('#address [name="district"]').change(function(){
+        console.log('ตำบล', this.value);
+      });
+      $('#address [name="amphoe"]').change(function(){
+        console.log('อำเภอ', this.value);
+      });
+      $('#address [name="province"]').change(function(){
+        console.log('จังหวัด', this.value);
+      });
+      $('#address [name="zipcode"]').change(function(){
+        console.log('รหัสไปรษณีย์', this.value);
+      });
+    </script>
+  </body>
+</html>
